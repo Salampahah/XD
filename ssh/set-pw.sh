@@ -18,7 +18,7 @@ clear
 pw=$(cat /root/passwd)
 if [[ "$pw" = "" ]]; then
 echo "Masukkan Password Baru"
-read -rp "Email : " -e pw
+read -rp "New Pw : " -e pw
 cat <<EOF>>/root/pw
 $pw
 EOF
