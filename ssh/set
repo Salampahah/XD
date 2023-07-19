@@ -16,9 +16,7 @@ domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 clear
 echo "Masukkan Password Baru"
-read -rp "New Pw : "passwd
-EOF
-fi
+read -rp "New Pw : " -e passwd
 clear
 echo "Mohon Menunggu , Proses Ganti Password sedang berlangsung !!"
 Detail Your Vps Info 
