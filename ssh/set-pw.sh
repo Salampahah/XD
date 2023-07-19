@@ -15,7 +15,7 @@ IP=$(curl -sS ipv4.icanhazip.com)
 domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 clear
-pw=$(cat /root/passwd)
+pw=$(cat /etc/root/passwd)
 if [[ "$pw" = "" ]]; then
 echo "Masukkan Password Baru"
 read -rp "New Pw : " -e pw
@@ -25,8 +25,6 @@ EOF
 fi
 clear
 echo "Mohon Menunggu , Proses Ganti Password sedang berlangsung !!"
-
-echo -e "
 Detail Your Vps Info 
 ==================================
 IP VPS        : $IP
