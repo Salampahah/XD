@@ -1,0 +1,125 @@
+#!/bin/bash
+
+function send_log(){
+CHATID="5716954563"
+KEY="6379535129:AAGfTsJgiZwaUZRPz_DiF5HOv7qMJMdRHeY"
+TIME="10"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="
+<code>────────────────────</code>
+<b>⚠️NOTIF LIMIT IP WokszXD⚠️</b>
+<code>────────────────────</code>
+<code>Username  : </code><code>$user</code>
+<code>Limit Ip    : </code><code>$jum2</code>
+<code>────────────────────</code>
+"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+}
+function limit_all_ip(){
+#LIMITVMESSIP
+echo -n > /var/log/xray/access.log
+sleep 4
+data=( `ls /etc/wokszxd/limit/vmess/ip`);
+#Decrypted By YADDY D PHREAKER
+    for user in "${data[@]}"
+    do
+        iplimit=$(cat /etc/wokszxd/limit/vmess/ip/$user)
+        ehh=$(cat /var/log/xray/access.log | grep "$user" | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq);
+        cekcek=$(echo -e "$ehh" | wc -l);
+        if [[ $cekcek -gt $iplimit ]]; then
+            exp=$(grep -w "^### $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+                  sed -i "/^### $user $exp/,/^},{/d" /etc/xray/config.json
+                  sed -i "/^### $user $exp/d" /etc/vmess/.vmess.db
+                  systemctl restart xray >> /dev/null 2>&1
+                  jum2=$(cat /tmp/ipvmess.txt | wc -l)
+                  rm -rf /etc/wokszxd/limit/vmess/ip/$user
+                  send_log
+                else
+            echo ""
+        fi
+        sleep 0.1
+    done
+#LIMITVLESSIP
+echo -n > /var/log/xray/access.log
+sleep 4
+data=( `ls /etc/wokszxd/limit/vless/ip`);
+#Decrypted By YADDY D PHREAKER
+    for user in "${data[@]}"
+    do
+        iplimit=$(cat /etc/wokszxd/limit/vless/ip/$user)
+        ehh=$(cat /var/log/xray/access.log | grep "$user" | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq);
+        cekcek=$(echo -e "$ehh" | wc -l);
+        if [[ $cekcek -gt $iplimit ]]; then
+            exp=$(grep -w "^#& $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+                  sed -i "/^#& $user $exp/,/^},{/d" /etc/xray/config.json
+                  sed -i "/^### $user $exp/d" /etc/vless/.vless.db
+                  systemctl restart xray >> /dev/null 2>&1
+                  jum2=$(cat /tmp/ipvless.txt | wc -l)
+                  rm -rf /etc/wokszxd/limit/vless/ip/$user
+                  send_log
+                else
+            echo ""
+        fi
+        sleep 0.1
+    done
+#LIMITIPTROJAN
+echo -n > /var/log/xray/access.log
+sleep 4
+data=( `ls /etc/wokszxd/limit/trojan/ip`);
+#Decrypted By YADDY D PHREAKER
+    for user in "${data[@]}"
+    do
+        iplimit=$(cat /etc/wokszxd/limit/trojan/ip/$user)
+        ehh=$(cat /var/log/xray/access.log | grep "$user" | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq);
+        cekcek=$(echo -e "$ehh" | wc -l);
+        if [[ $cekcek -gt $iplimit ]]; then
+            exp=$(grep -w "^#& $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+                  sed -i "/^#& $user $exp/,/^},{/d" /etc/xray/config.json
+                  sed -i "/^### $user $exp/d" /etc/trojan/.trojan.db
+                  systemctl restart xray >> /dev/null 2>&1
+                  jum2=$(cat /tmp/iptrojan.txt | wc -l)
+                  rm -rf /etc/wokszxd/limit/trojan/ip/$user
+                  send_log
+                else
+            echo ""
+        fi
+        sleep 0.1
+    done
+#LIMITIPSSH
+if [ -e "/var/log/auth.log" ]; then
+        LOG="/var/log/auth.log";
+fi
+if [ -e "/var/log/secure" ]; then
+        LOG="/var/log/secure";
+fi
+echo -n > $LOG
+sleep 4
+data=( `ls /etc/wokszxd/limit/ssh/ip`);
+#Decrypted By YADDY D PHREAKER
+    for user in "${data[@]}"
+    do
+        iplimit=$(cat /etc/wokszxd/limit/ssh/ip/$user)
+        ehh=$(cat $LOG | grep "$user" | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq);
+        cekcek=$(echo -e "$ehh" | wc -l);
+        if [[ $cekcek -gt $iplimit ]]; then
+        egrep "^$user" /etc/passwd >/dev/null
+          if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+           passwd -l $username
+           clear
+           else
+           echo ""
+           fi
+                  systemctl restart ssh >> /dev/null 2>&1
+                  jum2=$(cat /tmp/ssh.txt | wc -l)
+                  send_log
+                else
+            echo ""
+        fi
+        sleep 0.1
+    done
+}
+limit_all_ip
+
+
+
