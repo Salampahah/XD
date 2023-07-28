@@ -1,16 +1,16 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
-# Auther  : Geo Project
+# Auther  : WokszXD Project
 # (C) Copyright 2023
 # =========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-DOMAIN=gabutvpn.shop
+DOMAIN=wokszstore.com
 sub=$(</dev/urandom tr -dc a-x1-9 | head -c5 | tr -d '\r' | tr -d '\r\n')
-SUB_DOMAIN=${sub}.gabutvpn.shop
-CF_ID=paoandest@gmail.com
-CF_KEY=1d158d0efc4eef787222cefff0b6d20981462
+SUB_DOMAIN=${sub}.wokszstore.com
+CF_ID=ahdanfullset@gmail.com
+CF_KEY=236cfc0307a41ec0c88016fb2ba2a3a32c27f
 set -euo pipefail
 IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
