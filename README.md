@@ -62,8 +62,8 @@ Source : 600K Nego
 ```
 ### STATUS
 `UPDATED`
-
-### Lisensi
-Repository ini dilindungi oleh lisensi [PAK POLISI](https://mit-license.org/)
-
 BY: WokszXD | & Team 【XD】
+
+![qris](https://github.com/FighterTunnel/tunnel/raw/main/fodder/bhoikfostyahya/ftvpn.png)
+- Dana/Ovo/Gopay
+  - 085279323958
