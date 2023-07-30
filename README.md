@@ -64,6 +64,6 @@ Source : 600K Nego
 `UPDATED`
 BY: WokszXD | & Team 【XD】
 
-![qris](https://github.com/FighterTunnel/tunnel/raw/main/fodder/bhoikfostyahya/ftvpn.png)
+![qris](https://wokszxdstore.net/source/buy.jpg)
 - Dana/Ovo/Gopay
   - 085279323958
