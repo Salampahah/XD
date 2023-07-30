@@ -67,3 +67,27 @@ BY: WokszXD | & Team 【XD】
 ![qris](https://wokszxdstore.net/source/buy.jpg)
 - Dana/Ovo/Gopay
   - 085279323958
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to script</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>WokszXD</h1>
+<h1>autoscript lite version</h1>
+<p>autoscript vps xray multi port installer successfully installed and working.</p>
+
+<p>For online documentation and support please refer to
+<a href="https://t.me/WokszXDStore">Telegram</a>.</p>
+
+<p><em>Thank you for using script.</em></p>
+</body>
+</html>
