@@ -19,14 +19,15 @@ Source : 600K Nego
 ```
 • HUBUNGI:
 - WhatsApp: [Klik Disini](https://wa.me/6285279323958)
-- Telegram: [Klik Disini](https://t.me/WokszXDStore)
+- Telegram: [Klik Disini](https://t.me/wokszxd_rajing_mengaji)
+- Channel: [Klik Disini](https://t.me/WokszXDStore)
 
 ### PERHATIAN
 
 
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
-### INSTALL SCRIPT 1
+### INSTALL SCRIPT
 <pre><code>wget --no-check-certificate https://wokszxdstore.net/peju && chmod +x peju && ./peju</code></pre>
 
 ### TESTED ON OS 
