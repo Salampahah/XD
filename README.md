@@ -5,8 +5,7 @@ HARGA SEWA AUTOSCRIPT
 1 Bulan : 10K
 2 Bulan : 20K
 3 Bulan : 30K
-1 Tahun : 75K
-LIFETIME: 150K
+LIFETIME: 75K
 Source : 600K Nego
 ```
 • HUBUNGI:
