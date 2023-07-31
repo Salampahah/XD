@@ -18,10 +18,8 @@ Source : 600K Nego
 
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
-### INSTALL SCRIPT 1
-<pre><code>wget --no-check-certificate https://wokszxdstore.net/peju && chmod +x peju && ./peju</code></pre>
 
-### INSTALL SCRIPT 2
+### INSTALL SCRIPT 
 <pre><code>wget --no-check-certificate https://wokszxdstore.net/agoeskontol.sh && chmod +x agoeskontol.sh && ./agoeskontol.sh</code></pre>
 
 ### TESTED ON OS 
