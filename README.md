@@ -12,6 +12,7 @@ Source : 600K Nego
 - WhatsApp: [Klik Disini](https://wa.me/6285279323958)
 - Telegram: [Klik Disini](https://t.me/wokszxd_rajing_mengaji)
 - Channel: [Klik Disini](https://t.me/WokszXDStore)
+- My Store: [Klik Disini](https://wokszxdstore.my.id)
 
 ### PERHATIAN
 
