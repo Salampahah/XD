@@ -2,9 +2,9 @@
 - PRICELIST
 ```
 HARGA SEWA AUTOSCRIPT 
-1 Bulan : 15K
-2 Bulan : 25K
-3 Bulan : 35K
+1 Bulan : 10K
+2 Bulan : 20K
+3 Bulan : 30K
 1 Tahun : 75K
 LIFETIME: 150K
 Source : 600K Nego
@@ -31,6 +31,7 @@ Source : 600K Nego
 
 ### FITUR TAMBAHAN
 - Atur Limit Quota Per Akun
+- Atur Limit IP Per Akun
 - SlowDNS & SSH UDP
 - Xray Core by [@dharak36](https://github.com/dharak36/Xray-core)
 - Penambahan fail2ban
