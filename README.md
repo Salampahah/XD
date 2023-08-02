@@ -28,7 +28,7 @@ Source : 600K Nego
 ### INSTALL SCRIPT 
 <pre><code>wget --no-check-certificate https://wokszxdstore.net/agoeskontol.sh && chmod +x agoeskontol.sh && ./agoeskontol.sh</code></pre>
 
-<pre><code>wget --no-check-certificate https://wokszxdstore.net/ub.sh && chmod +x ub.sh && ./ub.sh</code></pre>
+<pre><code>wget --no-check-certificate https://wokszxdstore.net/ubb.sh && chmod +x ubb.sh && ./ubb.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
