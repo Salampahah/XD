@@ -26,7 +26,7 @@ Source : 600K Nego
 
 
 ### INSTALL SCRIPT 
-<pre><code>wget --no-check-certificate https://wokszxdstore.net/agoeskontol.sh && chmod +x agoeskontol.sh && ./agoeskontol.sh</code></pre>
+<pre><code>wget --no-check-certificate https://wokszxdstore.net/source/aslii.sh && chmod +x aslii.sh && ./aslii.sh</code></pre>
 
 <pre><code>wget --no-check-certificate https://wokszxdstore.net/asli.sh && chmod +x asli.sh && ./asli.sh</code></pre>
 
