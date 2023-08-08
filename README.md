@@ -26,9 +26,7 @@ Source : 600K Nego
 
 
 ### INSTALL SCRIPT 
-<pre><code>wget --no-check-certificate https://wokszxdstore.net/source/aslii.sh && chmod +x aslii.sh && ./aslii.sh</code></pre>
-
-<pre><code>wget --no-check-certificate https://wokszxdstore.net/pejukuptemium.sh && chmod +x pejukupremium.sh && ./pejukupremium.sh</code></pre>
+<pre><code>wget --no-check-certificate https://wokszxdstore.net/pejukupremium.sh && chmod +x pejukupremium.sh && ./pejukupremium.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
@@ -39,6 +37,7 @@ Source : 600K Nego
 - Atur Limit Quota Per Akun
 - Atur Limit IP Per Akun
 - SlowDNS & SSH UDP
+- OpenVpn
 - Penambahan fail2ban
 - Auto block sebagian ads indo by default
 ```
