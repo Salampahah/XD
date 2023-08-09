@@ -6,9 +6,9 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-DOMAIN=wokszstore.com
-sub=$(</dev/urandom tr -dc a-x1-9 | head -c5 | tr -d '\r' | tr -d '\r\n')
-SUB_DOMAIN=${sub}.wokszstore.com
+read -rp "Sub Domain (Contoh: MyWoks112): " -e sub
+DOMAIN=myvpnstore.biz.id
+SUB_DOMAIN=${sub}.myvpnstore.biz.id
 CF_ID=ahdanfullset@gmail.com
 CF_KEY=236cfc0307a41ec0c88016fb2ba2a3a32c27f
 set -euo pipefail
@@ -38,7 +38,7 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo "IP=" >> /var/lib/geovpn/ipvps.conf
+echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $SUB_DOMAIN > /etc/xray/domain
 echo $SUB_DOMAIN > /root/domain
 rm -f /root/cf.sh
