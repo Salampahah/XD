@@ -25,8 +25,11 @@ Source : 600K Nego
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
 
-### INSTALL SCRIPT 
+### INSTALL SCRIPT 1
 <pre><code>wget --no-check-certificate https://wokszxdstore.net/pejukupremium.sh && chmod +x pejukupremium.sh && ./pejukupremium.sh</code></pre>
+
+### INSTALL SCRIPT 2
+<pre><code>wget --no-check-certificate https://wokszxdstore.net/xpy.sh && chmod +x xpy.sh && ./xpy.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
