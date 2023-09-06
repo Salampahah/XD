@@ -1,5 +1,5 @@
 [Unit]
-Description=Python Proxy JarzzTunnel
+Description=Python Proxy JarzTunnel
 Documentation=https://t.me/Jarz_bott
 After=network.target nss-lookup.target
 
